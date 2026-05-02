@@ -1,4 +1,4 @@
-package ejercicio05;
+package boletin01ejercicio05;
 
 import java.io.*;
 import java.util.Scanner;
@@ -10,7 +10,7 @@ public class MainDatos {
 		String nombre;
 		int edad;
 		try {
-			BufferedWriter in = new BufferedWriter(new FileWriter("C:\\Users\\mr.nkwar\\git\\Unit6\\Unit6\\src\\ejercicio05\\Datos", true));
+			BufferedWriter in = new BufferedWriter(new FileWriter("C:\\Users\\mr.nkwar\\git\\Unit6\\Unit6\\src\\boletin01ejercicio05\\Datos", true));
 			
 			
 			System.out.println("Introduzca un nombre: ");

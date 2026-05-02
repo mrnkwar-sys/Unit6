@@ -1,4 +1,4 @@
-package ejercicio03;
+package boletin01ejercicio03;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -15,7 +15,7 @@ public class MainAlumnos {
 		int contador = 0;
 		try {
 			Scanner sc = 
-					new Scanner(new FileReader("C:\\Users\\mr.nkwar\\git\\Unit6\\Unit6\\src\\ejercicio03\\Alumnos"));
+					new Scanner(new FileReader("C:\\Users\\mr.nkwar\\git\\Unit6\\Unit6\\src\\boletin01ejercicio03\\Alumnos"));
 			
 			do {
 				nombre = sc.next();

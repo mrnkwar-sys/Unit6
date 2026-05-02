@@ -1,4 +1,4 @@
-package ejercicio08;
+package boletin01ejercicio08;
 
 import java.io.*;
 import java.time.LocalDate;
@@ -10,7 +10,7 @@ public class MainEstacionMeteorologica {
 
 	public static void main(String[] args) throws IOException {
 		try {
-			BufferedWriter in = new BufferedWriter(new FileWriter("C:\\Users\\mr.nkwar\\git\\Unit6\\Unit6\\src\\ejercicio08\\EstacionMeteorologica", true));
+			BufferedWriter in = new BufferedWriter(new FileWriter("C:\\Users\\mr.nkwar\\git\\Unit6\\Unit6\\src\\boletin01ejercicio08\\EstacionMeteorologica", true));
 			
 			//Opcion elegida por el usuario
 			int opcion;
@@ -62,7 +62,7 @@ public class MainEstacionMeteorologica {
 				}
 				case 2 -> {
 					try {
-						BufferedReader on = new BufferedReader(new FileReader("C:\\Users\\mr.nkwar\\git\\Unit6\\Unit6\\src\\ejercicio08\\EstacionMeteorologica"));
+						BufferedReader on = new BufferedReader(new FileReader("C:\\Users\\mr.nkwar\\git\\Unit6\\Unit6\\src\\boletin01ejercicio08\\EstacionMeteorologica"));
 						
 						while ((linea = on.readLine()) != null) {
 							System.out.println(linea);

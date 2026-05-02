@@ -1,4 +1,4 @@
-package ejercicio07;
+package boletin01ejercicio07;
 
 import java.util.TreeMap;
 import java.io.*;
@@ -10,7 +10,7 @@ public class MainAgenda {
 
 	public static void main(String[] args) throws IOException {
 		try {
-			BufferedWriter in = new BufferedWriter(new FileWriter("C:\\Users\\mr.nkwar\\git\\Unit6\\Unit6\\src\\ejercicio07\\Agenda", true));
+			BufferedWriter in = new BufferedWriter(new FileWriter("C:\\Users\\mr.nkwar\\git\\Unit6\\Unit6\\src\\boletin01ejercicio07\\Agenda", true));
 			
 			//Lista que va a contener el número y nombre de los usuarios
 			TreeMap<String, Integer> listaAgenda = new TreeMap<>();
