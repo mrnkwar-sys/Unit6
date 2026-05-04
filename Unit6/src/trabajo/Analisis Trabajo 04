@@ -1,0 +1,50 @@
+class Reserva implements Comparable<Reserva>
+# codReserva: int
+# nombreCliente: String
+# numHabitacion: int
+# fechaEntrada: String (formato dd/mm/aaaa; DateTimeParseException)
+# fechaSalida: String (formato dd/mm/aaaa; DateTimeParseException)
++ toString(): String
++ equals(Reserva otraReserva): boolean (mismo código)
++ compareTo(Reserva otraReserva): int (primero se compara por numHabitacion, luego por fechaEntrada)
++ Getters y setters de todos los atributos
++ Constructor con todos los atributos
+
+
+
+file datosReserva
+Almacena las reservas con el siguiente formato:
+código;nombre;nº habitación;fecha entrada;fecha salida
+
+
+
+class GestionReserva
++ anadirReserva(atributos de Reserva): void
++ buscarReserva(int codReserva): void (devuelve la información de la reserva)
++ listarReservas(): void
++ modificarReserva(int codReserva): void (cambia fechaEntrada/Salida) 
++ eliminarReserva(int codReserva): void
++ guardar(): void (guarda las reservas en el fichero)
+
+
+
+class ImpossibleDateException extends Exception
+Se lanza si la fechaSalida es anterior o igual a la fechaEntrada, y viceversa
+
+
+
+class NegativeNumberException extends Exception
+Se lanza si el código o el número de la habitación son negativos
+
+
+
+main
+Muestra el siguiente menú:
+  Añadir reserva.
+  Buscar reserva.
+  Listar reservas.
+  Modificar reserva.
+  Eliminar reserva.
+  Guardar.
+  Salir.	(muestra un mensaje de “Saliendo del sistema…”
+
